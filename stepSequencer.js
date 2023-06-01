@@ -86,7 +86,6 @@ function selectImage(givenImage){
 let index = 0
 Tone.Transport.scheduleRepeat(repeat, '8n')
 Tone.Transport.start()
-let happySun = document.querySelector(".happySun")
 let to;
 // checks if a image associated to a row is currently on or not.
 
@@ -106,13 +105,6 @@ function repeat(time) {
                 note.start(time);
               }
         console.log("meow", $input.checked, note)
-        if(i === 0 &&  $input.checked) {
-            // classlist is a domtoken list 
-            happySun.classList.remove("animate__bounce");
-            to = setTimeout(() => {
-                happySun.classList.add("animate__bounce")
-              }, 10);
-        }
         if((i in assignedPartyParrots) && ($input.checked)) {
           let givenParrotElement = selectImage(assignedPartyParrots[i])
           if (!(givenParrotElement in buttonClicked)) {
@@ -124,8 +116,7 @@ function repeat(time) {
             givenParrotElement.classList.add("animate__bounce")
             }, 10);
           }
-        
-    }
+        }
     index ++
   }
 }
