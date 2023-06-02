@@ -3,14 +3,32 @@
 }
 nav {
   position: absolute;
-  top: 650px;
+  top: 850px;
   text-decoration: none;
 }
+.overview {
+  font-weight: bold;
+}
 
+.emphasis  {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.left-notes {
+  position: absolute;
+  top: 0px;
+  left: 275px;
+}
+.right-notes {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+}
 .link {
   text-decoration: none;
   color: rgba(21, 0, 255, 0.64); /* Customize the link color */
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold; /* Example: make the link text bold */
   /* Add other desired styles */
 }
@@ -28,7 +46,7 @@ nav {
 }
 .overview {
   position: absolute;
-  top: 750px;
+  top: 950px;
   left: 475px;
   width: 50%;
   border-radius: 25px;
