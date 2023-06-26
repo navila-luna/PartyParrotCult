@@ -1,9 +1,21 @@
+body {
+  background-color:rgba(146, 95, 178, 0.177);
+}
 .container-color{
-  background-color:rgba(146, 95, 178, 0.177)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+h3 {
+  font-size: 10em;
+  
 }
 nav {
   position: absolute;
-  top: 850px;
+  top: 1600px;
   text-decoration: none;
 }
 .overview {
@@ -27,34 +39,45 @@ nav {
 }
 .link {
   text-decoration: none;
-  color: rgba(21, 0, 255, 0.64); /* Customize the link color */
+  color: rgb(195, 87, 249); 
   font-size: xx-large;
-  font-weight: bold; /* Example: make the link text bold */
-  /* Add other desired styles */
+  font-weight: bold; 
 }
 
 .link:hover {
-  color: rgb(195, 87, 249); /* Example: change link color on hover */
-  /* Add other desired styles for hover state */
+  color: rgba(202, 140, 210, 0.84);
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Adjust the height as per your needs */
-}
-.overview {
+.partyParrotOverview  {
   position: absolute;
-  top: 950px;
-  left: 475px;
+  top: 400px;
   width: 50%;
   border-radius: 25px;
   border: 10px solid rgba(162, 56, 224, 0.132); /* replace #f00 with your desired border color */
   background-color: rgba(153, 132, 236, 0.432);
 }
-
-.overview p {
+.video-container {
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  height: 150vh; /* Adjust the height as per your needs */
+  top: 600px;
+}
+.projectOverview  {
+  position: absolute;
+  top: 1175px;
+  width: 50%;
+  border-radius: 25px;
+  border: 10px solid rgba(162, 56, 224, 0.132); /* replace #f00 with your desired border color */
+  background-color: rgba(153, 132, 236, 0.432);
+}
+.arrow {
+  position: absolute;
+  top: 1450px;
+  transform: rotate(90deg);
+  width: 8%;
+}
+.partyParrotOverview .projectOverview p {
   font-size: 25px;
 }
 /* -----------------------Parrot Images---------------------------------- */
