@@ -19,7 +19,12 @@ const synths = [
     new Tone.Synth(),
     new Tone.Synth(), 
     new Tone.Synth(), 
+
+    new Tone.Synth(),
     new Tone.Synth(), 
+    new Tone.Synth(),
+    new Tone.Synth(), 
+    new Tone.Synth()
 ]
 
 synths[0].oscillator.type = 'triangle'
@@ -45,7 +50,7 @@ synths.forEach(synth => synth.toMaster())
 
 // will select any child of a div
 console.log("document.body", document.body)
-const $rows = document.body.querySelectorAll('div > div.row1, div.row2, div.row3, div.row4, div.row5, div.row6, div.row7, div.row8, div.row9, div.row10, div.row11, div.row12, div.row13, div.row14, div.row15, div.row16')
+const $rows = document.body.querySelectorAll('div > div.row1, div.row2, div.row3, div.row4, div.row5, div.row6, div.row7, div.row8, div.row9, div.row10, div.row11, div.row12, div.row13, div.row14, div.row15, div.row16, div.row17')
 console.log($rows)
 
 document.body.querySelectorAll('.checkbox-size').forEach((checkbox) => {
@@ -66,12 +71,12 @@ let drums = new Tone.Player("audio/drumss.wav").toMaster();
 
 const notes = ["D4", "F4", "A4", "C5",
                "G4", "B4", "D5", "F5", 
-               "C4", "E4", "E5", "G5", "B5", trumpet, trapSnare, bassElectric];
+               "C4", "E4", "E5", "G5", "B5", trapSnare, bassElectric,  trumpet, drums];
 
 // list of all the images for party parrots (does not currently include the gifs)
 const partyParrots = [".greenParrot", ".blueParrot",".originalPartyParrot", 
 ".purpleParrot",".pinkParrot", ".redParrot",".mischeviousPartyParrot", ".yellowParrot",
- ".movingRainbowParrots", ".greyParrot",".darkBlueParrot", ".crazyParrot", ".drums", ".trumpeta"]
+ ".movingRainbowParrots", ".greyParrot",".darkBlueParrot", ".crazyParrot", ".terminalParrot", ".drums_two",".redGuitar", ".trumpeta", ".drums" ]
 let assignedPartyParrots = {}
 for(let i=0; i < partyParrots.length; i++){
   assignedPartyParrots[i] = partyParrots[i]
