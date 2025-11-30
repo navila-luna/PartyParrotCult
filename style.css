@@ -1,371 +1,233 @@
-body {
-  background-color:rgba(146, 95, 178, 0.177);
-}
-.container-color{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 20px;
-}
-h3 {
-  font-size: 10em;
-  
-}
-nav {
-  position: absolute;
-  top: 1600px;
-  text-decoration: none;
-}
-.overview {
+#reset-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
   font-weight: bold;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.emphasis  {
-  font-weight: bold;
-  font-style: italic;
+#reset-button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.left-notes {
-  position: absolute;
-  top: 0px;
-  left: 275px;
-}
-.right-notes {
-  position: absolute;
-  top: 0px;
-  left: 175px;
-}
-.link {
-  text-decoration: none;
-  color: rgb(195, 87, 249); 
-  font-size: xx-large;
-  font-weight: bold; 
+#reset-button:active {
+  transform: translateY(0);
 }
 
-.link:hover {
-  color: rgba(202, 140, 210, 0.84);
-}
-
-.partyParrotOverview  {
-  position: absolute;
-  top: 400px;
-  width: 50%;
-  border-radius: 25px;
-  border: 10px solid rgba(162, 56, 224, 0.132); /* replace #f00 with your desired border color */
-  background-color: rgba(153, 132, 236, 0.432);
-}
-.video-container {
-  justify-content: center;
-  position: absolute;
-  align-items: center;
-  height: 150vh; /* Adjust the height as per your needs */
-  top: 600px;
-}
-.projectOverview  {
-  position: absolute;
-  top: 1175px;
-  width: 50%;
-  border-radius: 25px;
-  border: 10px solid rgba(162, 56, 224, 0.132); /* replace #f00 with your desired border color */
-  background-color: rgba(153, 132, 236, 0.432);
-}
-.arrow {
-  position: absolute;
-  top: 1450px;
-  transform: rotate(90deg);
-  width: 8%;
-}
-.partyParrotOverview .projectOverview p {
-  font-size: 25px;
-}
-/* -----------------------Parrot Images---------------------------------- */
-
-  .blueParrot {
-    position: absolute;
-    top: 550px;
-    right: 275px;
-    width: 10%;
-    visibility: hidden; 
-  }
-
-  .darkBlueParrot {
-    position: absolute;
-    top: 750px;
-    left: 115px;
-    width: 20%;
-    visibility: hidden; 
-  }
-  .greenParrot {
-    position: absolute;
-    top: 750px;
-    right: 315px;
-    width: 15%;
-    visibility: hidden; 
-  }
-
-  .greyParrot {
-    position: absolute;
-    top: 600px;
-    right: 75px;
-    width: 10%;
-    visibility: hidden; 
-  }
-  .redGuitar {
-    position: absolute;
-    top: 600px;
-    right: 290px;
-    width: 8%;
-    visibility: hidden; 
-  }
-  .originalPartyParrot {
-    position: absolute;
-    top: 20px;
-    left: 300px;
-    width: 15%;
-    visibility: hidden; 
-  }
-
-  .pinkParrot {
-    position: absolute;
-    top: 100px;
-    right: 120px;
-    width: 25%;
-    visibility: hidden; 
-  }
-
-  .purpleParrot {
-    position: absolute;
-    top: 350px;
-    left: 75px;
-    width: 15%;
-    visibility: hidden; 
-
-  }
-  .redParrot {
-    position: absolute;
-    top: 100px;
-    left: 75px;
-    width: 15%;
-    visibility: hidden; 
-  }
-  .trumpeta {
-    position: absolute;
-    top: 320px;
-    right: 250px;
-    width: 15%;
-    visibility: hidden; 
-  }
-
-  .yellowParrot {
-    position: absolute;
-    top: 700px;
-    left: 450px;
-    width: 5%;
-    visibility: hidden; 
-  }
-  .crazyParrot {
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    width: 15%;
-    visibility: hidden; 
-  }
-  .drums {
-    position: absolute;
-    top: 900px;
-    right: 425px;
-    width: 7%;
-    visibility: hidden; 
-  }
-  .drums_two{
-    position: absolute;
-    top: 425px;
-    left: 320px;
-    width: 12%;
-    visibility: hidden;
-  }
-  .movingRainbowParrots {
-    position: absolute;
-    top: 0px;
-    right: 425px;
-    width: 5%;
-    visibility: hidden; 
-  }
-  .mischeviousPartyParrot {
-    position: absolute;
-    top: 25px;
-    right: 100px;
-    width: 5%;
-    visibility: hidden; 
-  }
-  .terminalParrot {
-    position: absolute;
-    width: 10%;
-    left: 125px;
-    top: 575px;
-    visibility: hidden;
-  }
-  /* ---------------------------------Sequencer Styling----------------------------------------- */
- 
-  /* .overview {
-    border: 10px solid transparent;
-    padding: 15px;
-    border-image: url(data:image/jpeg;base64,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) 30 round;
-  } */
-/* .HappySoundsButton {
-    position: absolute;
-    top: 350px;
-    left: 75px;
-    width: 10%;
-    height: 10%;
-} */
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  position: fixed;
-  top: 0;
+  min-height: 100vh;
   width: 100vw;
-}
-.sequencer > div {
-  /* display: flex;
-  justify-content: flex; */
-  text-align: center;
-  margin-bottom: 30px;
-}
-.checkbox-size {
-  transform: scale(2); /* scale up the checkbox size */
-  margin-right: 30px; /* add some space between checkboxes */
-  transition: rotate 1s;
+  padding: 60px 20px 20px;
 }
 
-.row2 {
-  margin-top: 1rem;
+.sequencer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.row3 {
-  margin-top: 1rem;
+.row {
+  display: flex;
+  gap: 8px;
 }
 
 input[type=checkbox] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 16px;
-  height: 16px;
   border-radius: 2px;
   border: 1px solid black;
   outline: none;
 }
 
-.row1 > input[type=checkbox] {
-  background-color: rgb(181, 233, 112)
-}
-.row1 > input[type=checkbox]:checked {
-  background-color: darkgreen;
-}
-
-.row2 > input[type=checkbox] {
-  background-color: rgb(133, 230, 207)
-}
-.row2 > input[type=checkbox]:checked {
-  background-color: rgb(96, 140, 184);
-}
-.row3 > input[type=checkbox] {
-  background-color: rgba(8, 203, 92, 0.982)
-}
-.row3 > input[type=checkbox]:checked {
-  background-color: rgba(37, 108, 57, 0.809)
-}
-.row4 > input[type=checkbox] {
-  background-color: rgb(229, 149, 255)
-}
-.row4 > input[type=checkbox]:checked {
-  background-color: rgb(114, 68, 138);
-}
-.row5 > input[type=checkbox] {
-  background-color: rgba(238, 107, 179, 0.915)
-}
-.row5 > input[type=checkbox]:checked {
-  background-color: rgb(187, 85, 168);
-}
-.row6 > input[type=checkbox] {
-  background-color: rgba(246, 25, 25, 0.462)
-}
-.row6 > input[type=checkbox]:checked {
-  background-color: rgba(212, 22, 22, 0.868)
-}
-.row7 > input[type=checkbox] {
-  background-color: rgb(248, 45, 143)
-}
-.row7 > input[type=checkbox]:checked {
-  background-color: rgba(178, 136, 152, 0.988);
+.row > input[type=checkbox] {
+  width: 50px;
+  height: 50px;
+  appearance: none;
+  border-radius: 8px;
+  transition: 0.25s;
+  background-color: var(--row-color);
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.row8 > input[type=checkbox] {
-  background-color: rgba(248, 211, 45, 0.462)
-}
-.row8 > input[type=checkbox]:checked {
-  background-color: rgb(248, 211, 45)
-}
-.row9 > input[type=checkbox] {
-  background-color: rgba(45, 102, 248, 0.462)
-}
-.row9 > input[type=checkbox]:checked {
-  background-color: rgba(32, 100, 248, 0.9)
-}
-.row10 > input[type=checkbox] {
-  background-color: rgba(130, 100, 207, 0.566)
-}
-.row10 > input[type=checkbox]:checked {
-  background-color: rgb(120, 61, 149)
+.row > input[type=checkbox]:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
 }
 
-.row11 > input[type=checkbox] {
-  background-color: rgba(5, 77, 194, 0.672)
+.row > input[type=checkbox]:checked {
+  transform: rotate(45deg);
+  background-color: var(--row-checked);
+  border-color: rgba(0, 0, 0, 0.3);
 }
-.row11 > input[type=checkbox]:checked {
-  background-color:rgb(0, 70, 183)
+
+.row > input[type=checkbox]:checked:hover {
+  transform: rotate(45deg) scale(1.05);
 }
-.row12 > input[type=checkbox] {
-  background-color:rgba(13, 169, 140, 0.562)
+
+/* Remote cursor */
+#cursor-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
 }
-.row12 > input[type=checkbox]:checked {
-  background-color: rgba(50, 189, 163, 0.958)
+
+.remote-cursor {
+  position: absolute;
+  font-size: 20px;
+  pointer-events: none;
 }
-.row13 > input[type=checkbox] {
-  background-color: rgba(214, 249, 86, 0.83)
+
+/* Parrot styles */
+.blueParrot {
+  position: absolute;
+  top: 550px;
+  right: 275px;
+  width: 10%;
+  visibility: hidden; 
 }
-.row13 > input[type=checkbox]:checked {
-  background-color: rgba(104, 202, 58, 0.695)
+
+.darkBlueParrot {
+  position: absolute;
+  top: 750px;
+  left: 115px;
+  width: 20%;
+  visibility: hidden; 
 }
-.row14 > input[type=checkbox] {
-  background-color: rgba(100, 77, 0, 0.462)
+
+.greenParrot {
+  position: absolute;
+  top: 750px;
+  right: 315px;
+  width: 15%;
+  visibility: hidden; 
 }
-.row14 > input[type=checkbox]:checked {
-  background-color:  rgb(114, 94, 6)
+
+.greyParrot {
+  position: absolute;
+  top: 600px;
+  right: 75px;
+  width: 10%;
+  visibility: hidden; 
 }
-.row15 > input[type=checkbox] {
-  background-color: #2f2c2cc3
+
+.redGuitar {
+  position: absolute;
+  top: 600px;
+  right: 290px;
+  width: 8%;
+  visibility: hidden; 
 }
-.row15 > input[type=checkbox]:checked {
-  background-color: rgb(18, 19, 21)
+
+.originalPartyParrot {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 15%;
+  visibility: hidden; 
 }
-.row16 > input[type=checkbox] {
-  background-color: #2f2c2cc3
+
+.pinkParrot {
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  width: 25%;
+  visibility: hidden; 
 }
-.row16 > input[type=checkbox]:checked {
-  background-color: rgb(18, 19, 21)
+
+.purpleParrot {
+  position: absolute;
+  top: 350px;
+  left: 75px;
+  width: 15%;
+  visibility: hidden; 
 }
-/* .row17 > input[type=checkbox] {
-  background-color: #2f2c2cc3
+
+.redParrot {
+  position: absolute;
+  top: 100px;
+  left: 75px;
+  width: 15%;
+  visibility: hidden; 
 }
-.row17 > input[type=checkbox]:checked {
-  background-color: rgb(18, 19, 21)
-} */
-input[type=checkbox]:focus {
-  box-shadow: 0 0 3px 3px rgba(0, 0, 255, 0.2);
+
+.trumpeta {
+  position: absolute;
+  top: 320px;
+  right: 250px;
+  width: 15%;
+  visibility: hidden; 
+}
+
+.yellowParrot {
+  position: absolute;
+  top: 700px;
+  left: 450px;
+  width: 5%;
+  visibility: hidden; 
+}
+
+.crazyParrot {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 15%;
+  visibility: hidden; 
+}
+
+.drums {
+  position: absolute;
+  top: 900px;
+  right: 425px;
+  width: 7%;
+  visibility: hidden; 
+}
+
+.drums_two {
+  position: absolute;
+  top: 425px;
+  left: 320px;
+  width: 12%;
+  visibility: hidden;
+}
+
+.movingRainbowParrots {
+  position: absolute;
+  top: 0px;
+  right: 425px;
+  width: 5%;
+  visibility: hidden; 
+}
+
+.mischeviousPartyParrot {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  width: 5%;
+  visibility: hidden; 
+}
+
+.terminalParrot {
+  position: absolute;
+  width: 10%;
+  left: 125px;
+  top: 575px;
+  visibility: hidden;
 }

@@ -1,14 +1,17 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>ImmersifySound</title>
-        <!-- <script src="https://tonejs.github.io/build/Tone.js"> </script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.4.9/Tone.min.js"></script>
-        <link
+<head>
+    <meta charset="utf-8">
+    <title>ImmersifySound</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.4.9/Tone.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+</head>
+
+<body>
+    <button id="reset-button">Reset Grid</button>
     <img class="blueParrot animate__animated" src="images/blueParrot.png">
     <img class="darkBlueParrot animate__animated" src="images/darkBlueParrot.png">
     <img class="greenParrot animate__animated" src="images/greenParrot.png">
@@ -24,185 +27,18 @@
     <img class="trumpeta animate__animated" src="images/trumpet.png">
     <img class="movingRainbowParrots animate__animated" src="images/party-parrot.gif">
     <img class="redGuitar animate__animated" src="images/redGuitar.png">
-    <img class="terminalParrot animate_animated" src="images/terminalParrot.gif">
-    <img class=" mischeviousPartyParrot animate__animated" src="images/mischeviousPartyParrot.gif">
+    <img class="terminalParrot animate__animated" src="images/terminalParrot.gif">
+    <img class="mischeviousPartyParrot animate__animated" src="images/mischeviousPartyParrot.gif">
+    
+    <div id="cursor-layer"></div>
+    <div class="box">
+        <div id="sequencer" class="sequencer"></div>
+    </div>
 
-
-        <!-- <body>  -->
-        <div class="box">
-            <div class="sequencer">
-                <div class="row1">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row2">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row3">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row4">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row5">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row6">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row7">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row8">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row9">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row10">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row11">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row12">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row13">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row14">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row15">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row16">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-                <div class="row17">
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/> 
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                    <input type="checkbox" class= "checkbox-size"/>
-                </div>
-            </div> 
-        </div>
-    <!-- </body> -->
-    <script src="./stepSequencer.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="socket.js" type="module"></script>
+    <div id="parrot-layer"></div>
+    <script type="module" src="cursors.js" defer></script>
+    <script type="module" src="./stepSequencer.js" defer></script>
+</body>
 </html>
